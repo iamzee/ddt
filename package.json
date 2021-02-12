@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel watch build ./client/index.html",
-    "start": "nodemon server/index.js"
+    "build": "parcel build ./client/index.html",
+    "start": "nodemon server/index.js",
+    "build:dev": "parcel watch build ./client/index.html"
   },
   "author": "",
   "license": "ISC",
