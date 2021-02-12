@@ -1,0 +1,36 @@
+{
+  "name": "ddt_v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel watch build ./client/index.html",
+    "start": "nodemon server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "@nivo/bar": "^0.67.0",
+    "@nivo/core": "^0.67.0",
+    "@nivo/line": "^0.67.0",
+    "antd": "^4.10.2",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.12",
+    "nodemon": "^2.0.7",
+    "parcel-bundler": "^1.12.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "sass": "^1.32.7"
+  }
+}
