@@ -103,6 +103,7 @@ var create = async (req, res) => {
 			'notes',
 			'commission',
 			'setup',
+			'screenshots',
 		]);
 
 		var timeline = generateTimeline(
@@ -206,6 +207,7 @@ var edit = async (req, res) => {
 			'notes',
 			'commission',
 			'setup',
+			'screenshots',
 		]);
 
 		var timeline = generateTimeline(

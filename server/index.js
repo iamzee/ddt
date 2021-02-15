@@ -10,8 +10,7 @@ var statsRoutes = require('./routes/stats');
 var reportRoutes = require('./routes/report');
 var dashboardRoutes = require('./routes/dashboard');
 
-var mongoDbUri =
-	'mongodb+srv://iamzee:password99@cluster0.bd2sz.mongodb.net/ddt?retryWrites=true&w=majority';
+var mongoDbUri = process.env.MONGODB_URI;
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoDbUri, {
 	useNewUrlParser: true,

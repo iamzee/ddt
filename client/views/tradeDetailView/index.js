@@ -4,6 +4,8 @@ import { useParams, useHistory } from 'react-router-dom';
 import { read } from '../../api/trade';
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
 import DeleteTrade from './DeleteTrade';
+import Summary from './Summary';
+import History from './History';
 
 const TradeDetailView = () => {
 	const [trade, setTrade] = useState(null);
@@ -25,6 +27,7 @@ const TradeDetailView = () => {
 			{trade && (
 				<div key={trade._id}>
 					<PageHeader
+						style={{ paddingLeft: 0, paddingTop: 0 }}
 						title={trade.symbol}
 						extra={[
 							<Button
@@ -39,6 +42,8 @@ const TradeDetailView = () => {
 							<DeleteTrade tradeId={id} />,
 						]}
 					/>
+					<Summary trade={trade} />
+					<History trade={trade} />
 				</div>
 			)}
 		</>

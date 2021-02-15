@@ -94,6 +94,11 @@ var tradeSchema = mongoose.Schema({
 		type: mongoose.Schema.Types.ObjectId,
 		ref: 'Setup',
 	},
+	screenshots: [
+		{
+			type: String,
+		},
+	],
 });
 
 var Trade = mongoose.model('Trade', tradeSchema);

@@ -1,0 +1,54 @@
+.form-fields {
+	& > * {
+		margin-bottom: 24px;
+	}
+}
+
+.buys-fields {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 16px;
+
+	gap: 8px;
+	margin-bottom: 8px;
+
+	& > * {
+		width: 100%;
+	}
+
+	&__remove-icon {
+		place-self: center;
+		cursor: pointer;
+	}
+}
+
+.stops-fields {
+	display: grid;
+	grid-template-columns: auto 1fr 16px;
+
+	gap: 8px;
+	margin-bottom: 8px;
+
+	& > * {
+		width: 100%;
+	}
+
+	&__remove-icon {
+		place-self: center;
+		cursor: pointer;
+	}
+}
+
+.upload-fields {
+	display: flex;
+}
+
+.preview {
+	&__modal {
+		width: 1000px;
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+	}
+}

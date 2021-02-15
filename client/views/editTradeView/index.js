@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { edit, read } from '../../api/trade';
 import TradeForm from '../../components/tradeForm';
+import moment from 'moment';
 
 const EditTradeView = () => {
 	const [data, setData] = useState(null);
@@ -16,6 +17,7 @@ const EditTradeView = () => {
 			let sells = [];
 
 			data.timeline.forEach(t => {
+				t.time = moment(t.time);
 				if (t.action === 'BUY') {
 					delete t['action'];
 					delete t['_id'];
@@ -45,7 +47,10 @@ const EditTradeView = () => {
 
 	return (
 		<div>
-			<PageHeader title="Edit Trade" />
+			<PageHeader
+				title="Edit Trade"
+				style={{ paddingLeft: 0, paddingTop: 0 }}
+			/>
 			{data && <TradeForm trade={data} handleSubmit={handleSubmit} />}
 		</div>
 	);

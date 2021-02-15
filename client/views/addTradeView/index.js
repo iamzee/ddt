@@ -10,7 +10,10 @@ const AddTradeView = () => {
 
 	return (
 		<div>
-			<PageHeader title="Add Trade" />
+			<PageHeader
+				title="Add Trade"
+				style={{ paddingLeft: 0, paddingTop: 0 }}
+			/>
 			<TradeForm handleSubmit={handleSubmit} />
 		</div>
 	);
